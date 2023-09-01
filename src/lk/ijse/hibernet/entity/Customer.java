@@ -1,11 +1,15 @@
 package lk.ijse.hibernet.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * @author : Jayani_Arunika  9/2/2023 - 1:51 AM
  * @since : v0.01.0
  **/
-
+@Entity(name = "Customer_Details")
 public class Customer {
+    @Id
     String id;
     String name;
     String address;
